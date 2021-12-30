@@ -12,12 +12,12 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/tristanmisko/.rubies/ruby-2.7.4/include/ruby-2.7.0
+topdir = /Users/jentachibana/.rubies/ruby-2.7.4/include/ruby-2.7.0
 hdrdir = $(topdir)
-arch_hdrdir = /Users/tristanmisko/.rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-darwin21
+arch_hdrdir = /Users/jentachibana/.rubies/ruby-2.7.4/include/ruby-2.7.0/arm64-darwin20
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/tristanmisko/.rubies/ruby-2.7.4
+prefix = $(DESTDIR)/Users/jentachibana/.rubies/ruby-2.7.4
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -31,8 +31,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20211229-38712-1brwczz
-sitelibdir = $(DESTDIR)./.gem.20211229-38712-1brwczz
+sitearchdir = $(DESTDIR)./.gem.20211230-15782-1g0tut4
+sitelibdir = $(DESTDIR)./.gem.20211230-15782-1g0tut4
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -87,11 +87,11 @@ CCDLFLAGS = -fno-common
 CFLAGS   = $(CCDLFLAGS) -g -O2 -pipe $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir) -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ffi
 DEFS     = 
-CPPFLAGS = -DRUBY_EXTCONF_H=\"$(RUBY_EXTCONF_H)\"  -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -I/usr/local/opt/libyaml/include -I/usr/local/opt/gdbm/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
+CPPFLAGS = -DRUBY_EXTCONF_H=\"$(RUBY_EXTCONF_H)\"  -I/opt/homebrew/opt/openssl@1.1/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/gdbm/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
 CXXFLAGS = $(CCDLFLAGS) -g -O2 $(ARCH_FLAG)
-ldflags  = -L. -fstack-protector-strong -L/usr/local/lib -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib -pthread
-dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib 
-ARCH_FLAG = 
+ldflags  = -L. -fstack-protector-strong -L/opt/homebrew/opt/openssl@1.1/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/gdbm/lib -pthread
+dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress -L/opt/homebrew/opt/openssl@1.1/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/gdbm/lib 
+ARCH_FLAG = -m64
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle
 LDSHAREDXX = $(CXX) -dynamic -bundle
@@ -105,7 +105,7 @@ RUBY_VERSION_NAME = $(RUBY_BASE_NAME)-$(ruby_version)
 RUBYW_BASE_NAME = rubyw
 RUBY_BASE_NAME = ruby
 
-arch = x86_64-darwin21
+arch = arm64-darwin20
 sitearch = $(arch)
 ruby_version = 2.7.0
 ruby = $(bindir)/$(RUBY_BASE_NAME)
@@ -125,8 +125,8 @@ TOUCH = exit >
 #### End of system configuration section. ####
 
 preload = 
-libpath = . $(libdir) /usr/local/opt/openssl@1.1/lib /usr/local/opt/readline/lib /usr/local/opt/libyaml/lib /usr/local/opt/gdbm/lib
-LIBPATH =  -L. -L$(libdir) -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/gdbm/lib
+libpath = . $(libdir) /opt/homebrew/opt/openssl@1.1/lib /opt/homebrew/opt/readline/lib /opt/homebrew/opt/libyaml/lib /opt/homebrew/opt/gdbm/lib
+LIBPATH =  -L. -L$(libdir) -L/opt/homebrew/opt/openssl@1.1/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/gdbm/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log
