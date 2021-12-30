@@ -14,7 +14,7 @@
   @include relative-font-size(2);
   font-weight: 400;
   line-height: $base-line-height * $base-font-size * 2.25;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
   margin-bottom: 0;
   float: left;
 
@@ -27,6 +27,7 @@
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
+  @include relative-font-size(0.8)
 
   .nav-trigger {
       display: none;
@@ -50,9 +51,7 @@
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
+    background-color: $blue-color-dark;
     text-align: right;
 
     label[for="nav-trigger"] {
@@ -74,7 +73,7 @@
       text-align: center;
 
       > svg {
-        fill: $grey-color-dark;
+        fill: $yellow-color;
       }
     }
 
@@ -95,7 +94,7 @@
       &:not(:last-child) {
         margin-right: 0;
       }
-      margin-left: 20px;
+      margin-left: 10px;
     }
   }
 }
