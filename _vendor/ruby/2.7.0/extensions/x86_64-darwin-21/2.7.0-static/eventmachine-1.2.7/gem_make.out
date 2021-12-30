@@ -1,0 +1,16 @@
+current directory: /Users/tristanmisko/Documents/Berkeley/Swing/lindyonsproul.github.io/_vendor/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/Users/tristanmisko/.rubies/ruby-2.7.4/bin/ruby -I /Users/tristanmisko/.rubies/ruby-2.7.4/lib/ruby/site_ruby/2.7.0 -r ./siteconf20211229-38712-15791a7.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tristanmisko/Documents/Berkeley/Swing/lindyonsproul.github.io/_vendor/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= clean
+
+current directory: /Users/tristanmisko/Documents/Berkeley/Swing/lindyonsproul.github.io/_vendor/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\=
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/tristanmisko/Documents/Berkeley/Swing/lindyonsproul.github.io/_vendor/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20211229-38712-k016j3
