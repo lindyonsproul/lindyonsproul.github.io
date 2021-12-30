@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: default
 title:  "Lindy at Night"
-date:   2021-12-28 19:32:35 -0500
-categories: jekyll update
+permalink: /LaN/
 ---
+
+#Lindy at Night
 
 Lindy after dark...
