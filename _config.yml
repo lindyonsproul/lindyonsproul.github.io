@@ -21,11 +21,15 @@
 title: Lindy on Sproul
 email: swingcal@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hello!
+  Lindy on Sproul is Cal's premier swing dancing organization.  We hold events
+  every Saturday on Sproul Plaza featuring free lessons and social dancing.  We
+  also run SwingCal, the swing dancing DeCal at Berkeley, and Lindy at Night
+  Come dance with us!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 instagram_username: lindyonsproul
 facebook_username: LindyonSproul
+author: Tristan Misko
 
 # Build settings
 theme: minima
