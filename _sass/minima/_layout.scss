@@ -27,7 +27,7 @@
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
-  @include relative-font-size(0.8)
+  @include relative-font-size(0.8);
 
   .nav-trigger {
       display: none;
