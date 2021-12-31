@@ -8,11 +8,12 @@ layout: default
   {%- endif -%}
 
   {{ content }}
-  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9Hx3ZxL6mwTiwa0DpxtgyZD4vWxy7KLPBhxs1M1p34i8pHfPlavSggOXQxIPAiTQ-1eHYpxrGEVPF/pubhtml?widget=true&amp;headers=false" width="100%" height="300" class="myIframe">
-  </iframe>
-  <script type="text/javascript" language="javascript">
-  $('.myIframe').css('height', $(window).height()+'px');
-  </script>
+    <h2 class="schedule-heading">Lindy on Sproul Teaching Schedule</h2>
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9Hx3ZxL6mwTiwa0DpxtgyZD4vWxy7KLPBhxs1M1p34i8pHfPlavSggOXQxIPAiTQ-1eHYpxrGEVPF/pubhtml?widget=false&amp;headers=false&amp;chrome=true" width="100%" height="300" class="myIframe">
+      </iframe>
+      <script type="text/javascript" language="javascript">
+      $('.myIframe').css('height', $(window).height()+'px');
+      </script>
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Announcements" }}</h2>
     <ul class="post-list">
@@ -31,6 +32,7 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
+    <h2 class="calendar-heading">Upcoming Events in the Bay Area</h2>
 
   {%- endif -%}
 
