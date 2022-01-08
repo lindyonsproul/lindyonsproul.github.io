@@ -39,30 +39,29 @@
   .page-link {
     color: $gainsboro-color;
     line-height: $base-line-height;
-    margin: 50px;
-    // Gaps between nav items, but not on the last one
+    margin: 20px;
   }
 
   @include media-query($on-palm) {
     position: fixed;
-    float: center;
-    background-color: $saddle-brown-color;
+    margin-top: 14px;
+    background-color: $slate-color-dark;
     text-align: center;
 
     label[for="nav-trigger"] {
       display: block;
-      float: center;
-      width: 36px;
-      height: 36px;
+      position: center;
+      width: 100px;
+      height: 20px;
       z-index: 2;
       cursor: pointer;
     }
 
     .menu-icon {
       display: block;
-      float: center;
-      width: 36px;
-      height: 26px;
+      position: center;
+      width: 100px;
+      height: 20px;
       line-height: 0;
       padding-top: 10px;
       text-align: center;
@@ -94,7 +93,24 @@
   }
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /**
  * Site footer

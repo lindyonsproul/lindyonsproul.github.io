@@ -41,6 +41,7 @@ plugins:
 header_pages:
   - about.markdown
   - swingcal.markdown
+  - Events
   - get-involved.markdown
   - faq.markdown
 

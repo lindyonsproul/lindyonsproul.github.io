@@ -5,7 +5,7 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
   </div>
-  <div class="wrapper">
+   <div class="wrapper">
     {%- if page_paths -%}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -21,8 +21,11 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
+            {%- assign my_page = site.pages | where: "path", "Events" | first -%}
+            <a class="page-link" href="{{ my_page.url | relative_url}}"> <p> Events </p></a>
         </div>
       </nav>
     {%- endif -%}
   </div>
+
 </header>
