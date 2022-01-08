@@ -31,11 +31,18 @@ instagram_username: lindyonsproul
 facebook_username: LindyonSproul
 author: Lindy on Sproul
 future: true
+show_exerpts: true
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+header_pages:
+  - about.markdown
+  - swingcal.markdown
+  - get-involved.markdown
+  - FAQ.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.

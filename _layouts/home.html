@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Lindy on Sproul
 ---
 
 <div class="home">
@@ -8,12 +9,9 @@ layout: default
   {%- endif -%}
 
   {{ content }}
-    <h2 class="schedule-heading">Lindy on Sproul Teaching Schedule</h2>
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9Hx3ZxL6mwTiwa0DpxtgyZD4vWxy7KLPBhxs1M1p34i8pHfPlavSggOXQxIPAiTQ-1eHYpxrGEVPF/pubhtml?widget=false&amp;headers=false&amp;chrome=true" width="100%" height="300" class="myIframe">
-      </iframe>
-      <script type="text/javascript" language="javascript">
-      $('.myIframe').css('height', $(window).height()+'px');
-      </script>
+    <div class="float-panel"></div>
+        <p> Lorem ipsum dolem sum</p>
+    </div>
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Announcements" }}</h2>
     <ul class="post-list">
@@ -27,13 +25,21 @@ layout: default
           </a>
         </h3>
         {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+            {{ post.excerpt }}
         {%- endif -%}
       </li>
       {%- endfor -%}
     </ul>
-    <h2 class="calendar-heading">Upcoming Events in the Bay Area</h2>
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=1&src=ZHJuamc1NThsbm5ia3JtZHUzajNzbmVtajBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23E67C73&color=%230B8043" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
   {%- endif -%}
+<h2 class="calendar-heading">Upcoming Events in the Bay Area</h2>
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=1&src=ZHJuamc1NThsbm5ia3JtZHUzajNzbmVtajBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23E67C73&color=%230B8043" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<h2 class="schedule-heading">Lindy on Sproul Teaching Schedule</h2>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9Hx3ZxL6mwTiwa0DpxtgyZD4vWxy7KLPBhxs1M1p34i8pHfPlavSggOXQxIPAiTQ-1eHYpxrGEVPF/pubhtml?widget=true&amp;headers=false&amp;chrome=false" width="90%" height="800" class="myIframe">
+    </iframe>
+    <script type="text/javascript" language="javascript">
+    $('.myIframe').css('height', $(window).height()+'px');
+    </script>
+
 
 </div>

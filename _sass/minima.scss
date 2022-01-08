@@ -23,10 +23,17 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
+//Colors for the site, colorpalettes.net-
+$gainsboro-color:    #ebddd2 !default;
+$tan-color:          #cdaf9b !default;
+$sienna-color:       #9f6b39 !default;
+$saddle-brown-color: #873c1e !default;
+$slate-color-dark:   #312921 !default;
+
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    900px !default;
+$content-width:    800px !default;
 
 $on-palm:          700px !default;
 $on-laptop:        900px !default;

@@ -2,32 +2,31 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $blue-color-dark;
   min-height: $spacing-unit * 1.865;
-  background: $blue-color-dark;
-
+  width: 100%;
+  background: $saddle-brown-color;
+  text-align: center;
   // Positioning context for the mobile navigation icon
-  position: relative;
+  position: fixed;
 }
 
 .site-title {
   @include relative-font-size(2);
   font-weight: 400;
-  line-height: $base-line-height * $base-font-size * 2.25;
-  letter-spacing: -0.5px;
+  font-family: "Bookman Old Style";
+  line-height: $base-line-height * $base-font-size * 1.75;
   margin-bottom: 0;
-  float: left;
 
   &,
   &:visited {
-    color: $yellow-color;
+    color: $gainsboro-color;
   }
 }
 
 .site-nav {
-  float: right;
+  float: center;
   line-height: $base-line-height * $base-font-size * 2.25;
-  @include relative-font-size(0.7);
+  @include relative-font-size(1);
 
   .nav-trigger {
       display: none;
@@ -38,25 +37,21 @@
   }
 
   .page-link {
-    color: $yellow-color;
+    color: $gainsboro-color;
     line-height: $base-line-height;
-
+    margin: 50px;
     // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 15px;
-    }
   }
 
   @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    background-color: $blue-color-dark;
-    text-align: right;
+    position: fixed;
+    float: center;
+    background-color: $saddle-brown-color;
+    text-align: center;
 
     label[for="nav-trigger"] {
       display: block;
-      float: right;
+      float: center;
       width: 36px;
       height: 36px;
       z-index: 2;
@@ -65,7 +60,7 @@
 
     .menu-icon {
       display: block;
-      float: right;
+      float: center;
       width: 36px;
       height: 26px;
       line-height: 0;
@@ -73,7 +68,7 @@
       text-align: center;
 
       > svg {
-        fill: $yellow-color;
+        fill: $gainsboro-color;
       }
     }
 
@@ -105,7 +100,7 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 3px solid $saddle-brown-color;
   padding: $spacing-unit 0;
 }
 
@@ -175,6 +170,7 @@
  * Page content
  */
 .page-content {
+  margin-top: 80px;
   padding: $spacing-unit 0;
   flex: 1;
 }
