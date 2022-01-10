@@ -21,8 +21,6 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
-            {%- assign my_page = site.pages | where: "path", "Events" | first -%}
-            <a class="page-link" href="{{ my_page.url | relative_url}}"> <p> Events </p></a>
         </div>
       </nav>
     {%- endif -%}
