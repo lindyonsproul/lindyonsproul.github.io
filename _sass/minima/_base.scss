@@ -189,7 +189,16 @@ pre {
   }
 }
 
-
+/**
+ * Flex container: modern CSS method for doing multiple columns
+ */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
 
 /**
  * Clearfix
