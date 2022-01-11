@@ -34,10 +34,10 @@ $slate-color-light:  #312921e6 !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    700px !default;
+$content-width:    1140px !default;
 
 $on-palm:          700px !default;
-$on-laptop:        900px !default;
+$on-laptop:        1440px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
