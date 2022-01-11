@@ -201,6 +201,16 @@ pre {
 }
 
 /**
+ * boxes in the landing page
+ */
+.landing-box {
+  color: $gainsboro-color;
+  background-color: $slate-color-light;
+  margin: 3px;
+  padding: 6px;
+}
+
+/**
  * Clearfix
  */
 %clearfix:after {
