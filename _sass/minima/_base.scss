@@ -189,7 +189,26 @@ pre {
   }
 }
 
+/**
+ * Flex container: modern CSS method for doing multiple columns
+ */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
 
+/**
+ * boxes in the landing page
+ */
+.landing-box {
+  color: $gainsboro-color;
+  background-color: $slate-color-light;
+  margin: 3px;
+  padding: 6px;
+}
 
 /**
  * Clearfix

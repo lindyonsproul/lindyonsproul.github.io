@@ -29,14 +29,15 @@ $tan-color:          #cdaf9b !default;
 $sienna-color:       #9f6b39 !default;
 $saddle-brown-color: #873c1e !default;
 $slate-color-dark:   #312921 !default;
+$slate-color-light:  #312921e6 !default;
 
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    700px !default;
+$content-width:    1140px !default;
 
 $on-palm:          700px !default;
-$on-laptop:        900px !default;
+$on-laptop:        1440px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
