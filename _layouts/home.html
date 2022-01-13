@@ -20,7 +20,7 @@ title: Lindy on Sproul
           $('.myIframe').css('height', $(window).height()+'px');
           </script>
     </div>
-    <div class="landing-box" style="flex: 1 1">
+    <div class="landing-box" style="flex: 1 1" id="announcement-bar">
       {%- if site.posts.size > 0 -%}
         <h2 class="post-list-heading">{{ page.list_title | default: "Announcements" }}</h2>
         <ul class="post-list">
