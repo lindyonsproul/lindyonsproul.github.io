@@ -4,7 +4,6 @@ title: "FAQ"
 permalink: "/faq/"
 ---
 
-<<<<<<< HEAD
 ### Do I need to know how to dance to attend Lindy on Sproul?
 
 Absolutely not! We offer beginner lessons at every Lindy on Sproul event, and we strive to create an inclusive and non-judgemental learning environment.
@@ -28,11 +27,3 @@ That being said, it is OK to have a preferred role, and we do recommend that dan
 ### Do I need a dance partner to come to Lindy on Sproul?
 
 No partner required! For our dance lessons, we rotate partners frequently, so you will meet and dance with many different partners.  The social dance is *social*, meaning that
-
-###
-=======
-Do I need to know how to dance?
-Do I need a partner?
-Where do we go when it rains?
-Does LOS happen during semester breaks and on public holidays?
->>>>>>> af8c7735b8ac42da74141aac970e20a297e1f6bb

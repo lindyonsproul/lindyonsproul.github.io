@@ -7,27 +7,33 @@
         background: $saddle-brown-color;
         padding: 0px;
     }
-  min-height: $spacing-unit * 1.9;
   width: 100%;
   text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
 }
 
 .site-title {
   @include relative-font-size(2);
   font-weight: 400;
   font-family: "Bookman Old Style";
-  line-height: $base-line-height * $base-font-size * 1.75;
-  margin-bottom: 0;
+  line-height: $base-line-height * $base-font-size * 2.25;
+  padding: 10px 10px;
 
   &,
   &:visited {
     color: $gainsboro-color;
+  }
+  @include media-query($on-palm){
+    line-height: $base-line-height * $base-font-size * 2.25;
   }
 }
 
 /* Dropdown Button */
 .dropbtn {
   background-color: $saddle-brown-color;
+  @include media-query($on-palm){
+      background-color: $slate-color-dark;
+  }
   color: $gainsboro-color;
   padding: 12px;
   font-size: 16px;
@@ -46,7 +52,13 @@
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  @include media-query($on-palm){
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+      min-width: 100px;
+      width: 120px;
+      font-size: 12px;
+  }
   z-index: 1;
 }
 
@@ -66,6 +78,10 @@
 .dropdown:hover .dropdown-content {
     display: block;
     background-color: $slate-color-dark;
+    @include media-query($on-palm){
+        position: relative;
+
+    }
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -81,43 +97,45 @@
   }
 
   .menu-icon {
-    display: none;
+      display:none;
+
+      @include media-query($on-palm){
+          display: block;
+          float: center;
+          width: 50px;
+          height: 45px;
+          line-height: 0;
+          padding-top: 15px;
+          text-align: center;
+          > svg path {
+              fill: $gainsboro-color;
+          }
+      }
   }
 
   .page-link {
     color: $gainsboro-color;
     line-height: $base-line-height*0.8;
-    margin: 20px;
+    margin: -webkit-calc(5% - (#{$spacing-unit} / 2));
   }
 
   @include media-query($on-palm) {
-    position: float;
-    margin-top: 5px;
-    background-color: $slate-color-dark;
+    position: absolute;
+    right:0;
+    top: 0;
+    margin-top: 0px;
+    background-color: $saddle-brown-color;
     text-align: center;
+    width: 50px;
+
 
     label[for="nav-trigger"] {
-      display: block;
-      position: center;
-      width: 100%;
-      height: 15px;
-      z-index: 2;
-      cursor: pointer;
-    }
-
-    .menu-icon {
-      display: block;
-      position: center;
-      width: 100%x;
-      height: 20px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-
-      > svg {
-        fill: $gainsboro-color;
+        display: block;
+        width: 50px;
+        height: 45px;
+        z-index: 2;
+        cursor: pointer;
       }
-    }
 
     input ~ .trigger {
       clear: both;
@@ -126,12 +144,19 @@
 
     input:checked ~ .trigger {
       display: block;
+      float: right;
+      margin-top: 0;
+      background-color: $slate-color-dark;
+      text-align: right;
+      width: 120px;
       padding-bottom: 5px;
+      z-index: 2;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     }
 
     .page-link {
       display: block;
-      padding: 5px 5px;
+      padding: 10px 10px;
       margin: 0px;
     }
   }
@@ -211,7 +236,7 @@
  * Page content
  */
 .page-content {
-  margin-top: 80px;
+  margin-top: 0px;
   padding: $spacing-unit 0;
   flex: 1;
 }
