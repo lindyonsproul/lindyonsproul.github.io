@@ -15,12 +15,18 @@
         </label>
 
         <div class="trigger">
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
-          {%- endfor -%}
+            <a class="page-link" href="/about/">About</a>
+            <a class="page-link" href="/swingcal/">Our DeCal</a>
+            <div class="dropdown">
+                <button class="dropbtn">Events</button>
+                <div class="dropdown-content">
+                    <a href="/LaN/">Lindy at Night</a>
+                    <a href="/">Workshops & Practicas</a>
+                    <a href="#">Berkeley Lindy Exchange</a>
+                </div>
+            </div>
+            <a class="page-link" href="/get-involved/">Get Involved</a>
+            <a class="page-link" href="/faq/">FAQ</a>
         </div>
       </nav>
     {%- endif -%}

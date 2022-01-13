@@ -2,12 +2,14 @@
  * Site header
  */
 .site-header {
+    .wrapper{
+        width:100%;
+        background: $saddle-brown-color;
+        padding: 0px;
+    }
   min-height: $spacing-unit * 1.9;
   width: 100%;
-  background: $saddle-brown-color;
   text-align: center;
-  // Positioning context for the mobile navigation icon
-  position: fixed;
 }
 
 .site-title {
@@ -22,6 +24,52 @@
     color: $gainsboro-color;
   }
 }
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: $saddle-brown-color;
+  color: $gainsboro-color;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: $gainsboro-color;
+  background-color: $slate-color-dark;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: $slate-color-dark;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: $slate-color-dark;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: $slate-color-dark;}
 
 .site-nav {
   float: center;
@@ -38,13 +86,13 @@
 
   .page-link {
     color: $gainsboro-color;
-    line-height: $base-line-height;
+    line-height: $base-line-height*0.8;
     margin: 20px;
   }
 
   @include media-query($on-palm) {
     position: float;
-    margin-top: 14px;
+    margin-top: 5px;
     background-color: $slate-color-dark;
     text-align: center;
 
@@ -52,7 +100,7 @@
       display: block;
       position: center;
       width: 100%;
-      height: 20px;
+      height: 15px;
       z-index: 2;
       cursor: pointer;
     }
@@ -60,7 +108,7 @@
     .menu-icon {
       display: block;
       position: center;
-      width: 100px;
+      width: 100%x;
       height: 20px;
       line-height: 0;
       padding-top: 10px;
@@ -83,33 +131,10 @@
 
     .page-link {
       display: block;
-      padding: 5px 10px;
-
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 10px;
+      padding: 5px 5px;
+      margin: 0px;
     }
   }
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 /**
