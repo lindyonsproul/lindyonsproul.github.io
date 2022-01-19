@@ -2,29 +2,33 @@
  * Site header
  */
 .site-header {
-    .wrapper{
+    #title-box{
         width:100%;
-        background: $saddle-brown-color;
         padding: 0px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        @include media-query($on-palm){
+            margin-bottom: 7px;
+        }
     }
+  background: $saddle-brown-color;
   width: 100%;
   text-align: center;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
 }
 
 .site-title {
-  @include relative-font-size(2);
+  @include relative-font-size(2.5);
   font-weight: 400;
-  font-family: "Bookman Old Style";
-  line-height: $base-line-height * $base-font-size * 2.25;
-  padding: 10px 10px;
+  font-family: "Rousseau";
+  line-height: $base-line-height * $base-font-size * 1;
 
   &,
   &:visited {
     color: $gainsboro-color;
   }
   @include media-query($on-palm){
-    line-height: $base-line-height * $base-font-size * 2.25;
+    line-height: $base-line-height * $base-font-size * 1;
   }
 }
 
@@ -105,7 +109,7 @@
           width: 50px;
           height: 45px;
           line-height: 0;
-          padding-top: 15px;
+          padding-top: 17.5px;
           text-align: center;
           > svg path {
               fill: $gainsboro-color;
