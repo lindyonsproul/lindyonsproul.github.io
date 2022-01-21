@@ -1,8 +1,9 @@
 ---
-layout: page
-title: "FAQ"
+layout: FAQ
 permalink: "/faq/"
 ---
+
+# Frequently Asked Questions
 
 ### Do I need to know how to dance to attend Lindy on Sproul?
 

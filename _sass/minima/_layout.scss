@@ -10,7 +10,7 @@
         @include media-query($on-palm){
             margin-bottom: 7px;
         }
-        z-index: 0;
+        z-index: 3;
     }
   background: $saddle-brown-color;
   width: 100%;
@@ -48,6 +48,7 @@
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
+  z-index: 3;
   display: inline-block;
 }
 
@@ -64,7 +65,7 @@
       width: 120px;
       font-size: 12px;
   }
-  z-index: 1;
+  z-index: 3;
 }
 
 /* Links inside the dropdown */
@@ -131,31 +132,32 @@
     margin-top: 0px;
     background-color: $saddle-brown-color;
     text-align: center;
-    width: 50px;
+    width: 49px;
 
 
     label[for="nav-trigger"] {
         display: block;
         width: 50px;
-        height: 45px;
-        z-index: 2;
+        height: 50px;
+        z-index: 4;
         cursor: pointer;
       }
 
     input ~ .trigger {
       clear: both;
       display: none;
+      background: $slate-color-dark;
     }
 
     input:checked ~ .trigger {
       display: block;
       float: right;
       margin-top: 0;
-      background-color: $slate-color-dark;
+      margin-right: 0;
       text-align: right;
-      width: 120px;
+      width: 125px;
       padding-bottom: 5px;
-      z-index: 2;
+      z-index: 4;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     }
 
@@ -318,4 +320,75 @@
       @include relative-font-size(1.125);
     }
   }
+}
+
+/*
+FAQ page layout
+*/
+
+.textbox {
+    text-align: left;
+    background: $slate-color-dark;
+    color: $gainsboro-color;
+    margin: 10px;
+    padding: 15px;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    h1 {
+        @include relative-font-size(1.1);
+    }
+    @include media-query($on-palm){
+        float: center;
+        position: relative;
+        top: 10px;
+    }
+    z-index: 1;
+}
+
+#Q1 {
+    max-width: 400px;
+    top: 100px;
+    margin-left: 10%;
+    @include media-query($on-palm){
+        max-width: $on-palm;
+        top: 15px;
+        align: center;
+        margin: auto;
+    }
+}
+
+#Q2 {
+    max-width: 450px;
+    top: 240px;
+    margin-right: 10%;
+    @include media-query($on-palm){
+        max-width: $on-palm;
+        top: 25px;
+        align: center;
+        margin: auto;
+    }
+}
+
+#Q3 {
+    max-width: 450px;
+    top: 240px;
+    margin-right: 10%;
+    @include media-query($on-palm){
+        max-width: $on-palm;
+        top: 25px;
+        align: center;
+        margin: auto;
+    }
+}
+
+#Q4 {
+    max-width: 450px;
+    top: 240px;
+    margin-right: 10%;
+    @include media-query($on-palm){
+        max-width: $on-palm;
+        top: 25px;
+        align: center;
+        margin: auto;
+    }
 }
