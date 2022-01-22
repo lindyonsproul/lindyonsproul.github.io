@@ -222,9 +222,10 @@ pre {
  */
 .parallax {
   perspective: 1px;
-  height: 100vh;
+  height: 60vh;
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-perspective-origin-x: 100%;
 }
 .parallax__layer {
   position: absolute;
@@ -232,12 +233,14 @@ pre {
   right: 0;
   bottom: 0;
   left: 0;
+  -webkit-transform-origin-x: 100%;
 }
 .parallax__layer--base {
   transform: translateZ(0);
 }
 .parallax__layer--back {
-  transform: translateZ(-1px) scale(3);
+  position: fixed;
+  transform: translateZ(-1px) scale(2);
 }
 
 /**

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home_default
 title: Lindy on Sproul
 ---
 
@@ -7,38 +7,31 @@ title: Lindy on Sproul
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
-  <div class="parallax">
-    <div class="parallax__layer parallax__layer--back">
-      <img src="assets/sample_background.jpg">
-    </div>
-    <div class="parallax__layer parallax__layer--base">
-      <div class="flex-container">
-          <div class="landing-box" style="flex: 2 2" id="main-content">
-            {{ content }}
-          </div>
-          <div class="landing-box" style="flex: 1 1" id="announcements">
-            {%- if site.posts.size > 0 -%}
-              <h2 class="post-list-heading">{{ page.list_title | default: "Announcements" }}</h2>
-              <ul class="post-list">
-                {%- for post in site.posts -%}
-                <li>
-                  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                  <span class="post-meta">{{ post.date | date: date_format }}</span>
-                  <h3>
-                    <a class="post-link" href="{{ post.url | relative_url }}">
-                      {{ post.title | escape }}
-                    </a>
-                  </h3>
-                  {%- if site.show_excerpts -%}
-                      {{ post.excerpt }}
-                  {%- endif -%}
-                </li>
-                {%- endfor -%}
-              </ul>
+    <div class="flex-container">
+        <div class="landing-box" style="flex: 2 2" id="main-content">
+          {{ content }}
+        </div>
+        <div class="landing-box" style="flex: 1 1" id="announcements">
+          {%- if site.posts.size > 0 -%}
+            <h2 class="post-list-heading">{{ page.list_title | default: "Announcements" }}</h2>
+            <ul class="post-list">
+              {%- for post in site.posts -%}
+              <li>
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                <h3>
+                  <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                  </a>
+                </h3>
+                {%- if site.show_excerpts -%}
+                    {{ post.excerpt }}
+                {%- endif -%}
+              </li>
+              {%- endfor -%}
+            </ul>
 
-            {%- endif -%}
-          </div>
-      </div>
+          {%- endif -%}
+        </div>
     </div>
-  </div>
 </div>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+
+  {%- include head.html -%}
+
+  <body>
+    {%- include header.html -%}
+    <div class='parallax'>
+      <div class="parallax__layer parallax__layer--back">
+        <img src="./assets/sample_background.jpg"></img>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+
+
+        <main class="page-content" aria-label="Content">
+          <div class="wrapper">
+            {{ content }}
+          </div>
+        </main>
+      </div>
+    </div>
+    {%- include footer.html -%}
+  </body>
+
+</html>
