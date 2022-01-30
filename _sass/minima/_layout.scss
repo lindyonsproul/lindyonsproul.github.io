@@ -10,12 +10,13 @@
         @include media-query($on-palm){
             margin-bottom: 7px;
         }
-        z-index: 3;
+        z-index: 5;
     }
   background: $saddle-brown-color;
   width: 100%;
   text-align: center;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+  position: relative;
 }
 
 .site-title {
@@ -132,6 +133,7 @@
     margin-top: 0px;
     background-color: $saddle-brown-color;
     text-align: center;
+    z-index: 3;
     width: 49px;
 
 

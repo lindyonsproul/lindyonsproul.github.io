@@ -1,9 +1,8 @@
 ---
-layout: FAQ
+layout: page
 permalink: "/faq/"
+title: "Frequently Asked Questions"
 ---
-
-# Frequently Asked Questions
 
 ### Do I need to know how to dance to attend Lindy on Sproul?
 
@@ -11,7 +10,7 @@ Absolutely not! We offer beginner lessons at every Lindy on Sproul event, and we
 
 ### What are "roles" in swing dancing?
 
-Broadly speaking, there are two roles in a partnered swing dance: the "**lead**" and the "**follow**." The **lead** selects moves and initiates the movements in a dance.  The **follow** responds to the lead's suggestions.  
+Broadly speaking, there are two roles in a partnered swing dance: the **lead** and the **follow**. The lead selects moves and initiates the movements in a dance.  The follow responds to the lead's suggestions.  
 
 ### Who can lead and who can follow?
 
