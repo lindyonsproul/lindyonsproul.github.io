@@ -222,6 +222,7 @@ pre {
  */
 .parallax {
   perspective: 1px;
+  z-index: 0;
   height: 60vh;
   overflow-x: hidden;
   overflow-y: auto;
