@@ -8,6 +8,10 @@ title: "Frequently Asked Questions"
 
 Absolutely not! We offer beginner lessons at every Lindy on Sproul event, and we strive to create an inclusive and non-judgemental learning environment.
 
+### Do I need to pay to attend Lindy on Sproul classes?
+
+Nope! Our classes are totally free. 
+
 ### What are "roles" in swing dancing?
 
 Broadly speaking, there are two roles in a partnered swing dance: the **lead** and the **follow**. The lead selects moves and initiates the movements in a dance.  The follow responds to the lead's suggestions.  

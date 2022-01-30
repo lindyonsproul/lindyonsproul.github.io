@@ -7,7 +7,8 @@ layout: home
 
 ### Who We Are
 
-We're a group of UC Berkeley students and community-members who enjoy swing dancing! Photo goes here
+We're a group of UC Berkeley students and community-members who enjoy swing dancing! 
+
 
 ### When We Meet
 
@@ -16,3 +17,7 @@ We're a group of UC Berkeley students and community-members who enjoy swing danc
 ### Where We Meet
 
 Upper Sproul Plaza on the Campus of UC Berkeley, right in front of Golden Bear Cafe.
+
+
+Join us for FREE weekly beginner and intermediate swing dance lessons. All you need is to bring yourself and a pair of comfy shoes to dance in. No partner or dance experience is required. 
+
