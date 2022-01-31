@@ -278,6 +278,7 @@
 
 .post-link {
   display: block;
+  font-family: $base-font-family;
   @include relative-font-size(1.2);
 }
 

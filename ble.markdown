@@ -1,7 +1,5 @@
 ---
-layout: page
+layout: under-construction
 title: "Berkeley Lindy Exchange"
 permalink: /ble/
 ---
-
-Excuse our appearance, we're still under construction. 

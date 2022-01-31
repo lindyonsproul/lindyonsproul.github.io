@@ -28,6 +28,7 @@ title: Lindy on Sproul
         </div>
         <div class="landing-box" style="flex: 1 1" id="announcements">
           {%- if site.posts.size > 0 -%}
+          <div class="text-box">
             <h1 class="post-list-heading"> Announcements </h1>
             <ul class="post-list">
               {%- for post in site.posts -%}
@@ -45,7 +46,7 @@ title: Lindy on Sproul
               </li>
               {%- endfor -%}
             </ul>
-
+           </div>
           {%- endif -%}
         </div>
     </div>

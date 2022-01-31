@@ -30,6 +30,7 @@ body {
 .body-wrapper {
     overflow-x:hidden !important;
 }
+
 @font-face {
   font-family: "Rousseau";
   src: url('RousseauDeco.ttf') format('truetype');
@@ -106,7 +107,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-   font-size: 34px;
+   font-size: 30px;
+}
+
+h2 {
+    font-size: 26px;
 }
 
 
@@ -231,14 +236,20 @@ pre {
   color: $gainsboro-color;
   min-width: 350px;
   background-color: $slate-color-light;
-  margin: 0px 3px 10px 3px;
-  padding: 6px;
+  margin: 0px 5px 10px 5px;
+  padding: 7px;
 }
 
 #main-content {
   background-color: $transparent-color;
   padding: 0px;
   margin: 0px;
+}
+
+#announcements {
+    background-color: $transparent-color;
+    padding: 0px;
+    margin: 0px;
 }
 
 /**
@@ -258,7 +269,7 @@ pre {
  .parallax__layer--back {
      left: -300px;
      right:-300px;
-     min-width: 960px;
+     min-width: 500px;
      z-index: 0;
  }
 

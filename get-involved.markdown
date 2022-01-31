@@ -1,7 +1,5 @@
 ---
-layout: page
+layout: under-construction
 title: "Get Involved"
 permalink: "/getinvolved/"
 ---
-
-Excuse our appearance, we're still under construction.
