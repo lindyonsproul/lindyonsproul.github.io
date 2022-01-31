@@ -10,11 +10,15 @@ Absolutely not! We offer beginner lessons at every Lindy on Sproul event, and we
 
 # Do I need to pay to attend Lindy on Sproul classes?
 
+<<<<<<< HEAD
+Nope! Our classes are **free**. 
+=======
 Nope! Our classes are totally free.
+>>>>>>> 79f6202760a942e9f52928a7ef97e94805fdf217
 
 # What are "roles" in swing dancing?
 
-Broadly speaking, there are two roles in a partnered swing dance: the **lead** and the **follow**. The lead selects moves and initiates the movements in a dance.  The follow responds to the lead's suggestions.  
+Broadly speaking, there are two roles in a partnered swing dance: the **lead** and the **follow**. The lead selects moves and initiates the movements in a dance. The follow responds to the lead's suggestions.  
 
 # Who can lead and who can follow?
 
@@ -30,4 +34,31 @@ That being said, it is OK to have a preferred role, and we do recommend that dan
 
 # Do I need a dance partner to come to Lindy on Sproul?
 
-No partner required! For our dance lessons, we rotate partners frequently, so you will meet and dance with many different partners.  The social dance is *social*, meaning that
+No partner required! For our dance lessons, we rotate partners frequently, so you will meet and dance with many different partners. 
+
+### Do you still hold classes when it rains?
+
+Yes we do! We will move to the tunnel below Cesar Chavez Lower Sproul if weather conditions become unfavourable. An annoucement will be posted to this website and to our Facebook page if we are holding our class and social dance at a different location so look out for that! 
+
+### Do you still hold classes over semester breaks/public holidays?
+
+Yup! You can assume that we will be hosting Lindy on Sproul every Saturday. An annoucement will be posted to this website and to our Facebook page if we are not. 
+
+### What other opportunities are there for me to practice social dancing?
+
+We encourage you to attend our monthly night socials <i> Lindy at Night<i>. Details on when and where these socials are going to be will be announced on Facebook and on this website.   
+
+Outside of Berkeley,<i> Lindy by the Lake <i> is another fun event you may want to check out. It takes place on the last Saturday of every month by the Lake Merritt East 18th Street Pier. 
+
+If you are a Berkeley student, you should also consider joining our DeCal. 
+
+
+
+### How can I contact you?
+
+Feel free to drop us a message on Facebook. 
+
+
+
+
+
