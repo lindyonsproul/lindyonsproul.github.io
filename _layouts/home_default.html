@@ -5,19 +5,21 @@
   {%- include head.html -%}
 
   <body>
-    <div class='parallax'>
-      <div class="parallax__layer parallax__layer--back">
-        <img class="bg-image" src="./assets/sample_background.jpg"></img>
-      </div>
-      <div class="parallax__layer parallax__layer--base">
-        {%- include header.html -%}
-
-        <main class="page-content" aria-label="Content">
-          <div class="wrapper">
-            {{ content }}
+    <div class='body-wrapper'>
+        <div class='parallax'>
+          <div class="parallax__layer parallax__layer--back">
+            <img class="bg-image" src="./assets/sample_background.jpg"></img>
           </div>
-        </main>
-      </div>
+          <div class="parallax__layer parallax__layer--base">
+            {%- include header.html -%}
+
+            <main class="page-content" aria-label="Content">
+              <div class="wrapper">
+                {{ content }}
+              </div>
+            </main>
+          </div>
+        </div>
     </div>
     {%- include footer.html -%}
 
