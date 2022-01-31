@@ -4,6 +4,9 @@ permalink: "/faq/"
 title: "Frequently Asked Questions"
 ---
 
+## <center> Frequently Asked Questions <center>
+
+
 # Do I need to know how to dance to attend Lindy on Sproul?
 
 Absolutely not! We offer beginner lessons at every Lindy on Sproul event, and we strive to create an inclusive and non-judgemental learning environment.

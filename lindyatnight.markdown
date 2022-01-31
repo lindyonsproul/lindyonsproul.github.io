@@ -4,6 +4,9 @@ title: "Lindy at Night"
 permalink: "/lindyatnight/"
 ---
 
+
+## <center> Lindy at Night <center> 
+	
 # What is Lindy at Night?
 
 Lindy at Night is an evening social dance organised by Berkeley students. 
