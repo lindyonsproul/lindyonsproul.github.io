@@ -8,7 +8,7 @@ permalink: "/swingcal/"
 
 ## The Basics
 
-SwingCal is a 1 unit Decal for UC Berkeley students.  Taken Pass/No Pass, you will learn the fundamentals of swing
+SwingCal is a 1 Unit Decal for UC Berkeley students.  Taken Pass/No Pass, you will learn the fundamentals of swing
 
 Friday 6-8pm
 Esh?
