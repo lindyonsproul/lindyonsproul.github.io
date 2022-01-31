@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   also run SwingCal, the swing dancing DeCal at Berkeley, and Lindy at Night, a
   quasi-monthly late night social dance. Come dance with us!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "lindyonsproul.dance" # the base hostname & protocol for your site, e.g. http://example.com
 instagram_username: lindyonsproul
 facebook_username: LindyonSproul
 author: Lindy on Sproul

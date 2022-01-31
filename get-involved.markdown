@@ -4,14 +4,4 @@ title: "Get Involved"
 permalink: "/getinvolved/"
 ---
 
-### SwingCore
-
-#### Roles
-
-#### ETC
-
-### Lindy on Sproul Shadowing
-
-### SwingCal
-
-### Schedule
+Excuse our appearance, we're still under construction.

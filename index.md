@@ -4,6 +4,7 @@
 
 layout: home
 ---
+<<<<<<< HEAD
 
 
 ### Who We Are
@@ -25,3 +26,5 @@ Upper Sproul Plaza on the Campus of UC Berkeley, right in front of Golden Bear C
 
 
 
+=======
+>>>>>>> dev
