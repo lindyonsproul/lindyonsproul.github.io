@@ -59,7 +59,7 @@
   display: none;
   position: absolute;
   margin-left: -50px;
-  margin-top: 7px;
+  margin-top: 5px;
   background-color: $slate-color-dark;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
@@ -126,7 +126,7 @@
   .page-link {
     color: $gainsboro-color;
     line-height: $base-line-height*0.8;
-    margin: -webkit-calc(5% - (#{$spacing-unit} / 2));
+    margin: -webkit-calc(6% - (#{$spacing-unit} / 2));
   }
 
   @include media-query($on-palm) {

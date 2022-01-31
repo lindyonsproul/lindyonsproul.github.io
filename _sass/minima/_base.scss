@@ -8,6 +8,10 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+html {
+    min-width: 400px;
+}
+
 /**
  * Basic styling
  */
@@ -24,11 +28,11 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  overflow-x: hidden !important;
 }
 
 .body-wrapper {
-    overflow-x:hidden !important;
+    overflow-x: hidden !important;
+    min-width: 400px;
 }
 
 @font-face {
@@ -226,7 +230,7 @@ pre {
  */
 .landing-box {
   color: $gainsboro-color;
-  min-width: 350px;
+  min-width: 380px;
   background-color: $slate-color-light;
   margin: 0px 10px;
   padding: 6px;
@@ -257,51 +261,32 @@ pre {
  * https://keithclark.co.uk/articles/pure-css-parallax-websites/
  */
 
-
- .parallax {
-   z-index: 0;
- }
-
-.parallax__layer{
-    position: absolute;
+.parallax {
+  perspective: 1px;
+  z-index: 0;
+  height: 92vh;
+  min-width: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective-origin-x: 100%;
 }
 
- .parallax__layer--back {
-     left: -300px;
-     right:-300px;
-     min-width: 500px;
-     z-index: 0;
- }
-
-@media screen and (min-width:960px){
-    .parallax {
-      perspective: 1px;
-      z-index: 0;
-      height: 92vh;
-      overflow-x: hidden;
-      overflow-y: auto;
-      -webkit-perspective-origin-x: 100%;
-    }
-
-    .parallax__layer {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      -webkit-transform-origin-x: 100%;
-    }
-    .parallax__layer--base {
-      transform: translateZ(0);
-    }
-    .parallax__layer--back {
-      position: fixed;
-      transform: translateZ(-1px) scale(2);
-    }
-
-
-
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin-x: 100%;
 }
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  position: fixed;
+  transform: translateZ(-1px) scale(2);
+}
+
 /*
  * Clearfix
  */

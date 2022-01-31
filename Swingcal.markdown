@@ -4,25 +4,21 @@ title: "SwingCal"
 permalink: "/swingcal/"
 ---
 
+# <center> SwingCal: Our Swing Dancing DeCal </center>
+
 For over ten years, SwingCal has taught Berkeley students how to swing dance in a fun and relaxed environment. The class teaches the history of swing dance and music, as well as the modern swing culture that now exists all over the world, bringing a greater context and significance to the moves that we teach. We meet once a week, we have three short take home assignments per semester, and no partner is required! At SwingCal we focus on making dancing a stress free experience since swing is all about being comfortable in your personality and showing it through your dancing. We'd love to have you join our family!
 
 
-# The Basics
+## The Basics
 
 Classes will be held every Thursday from 7 to 9:30pm in room 242 of Hearst Gym.
 
 For over ten years, SwingCal has taught Berkeley students how to swing dance in a fun and relaxed environment. The class teaches the history of swing dance and music, as well as the modern swing culture that now exists all over the world, bringing a greater context and significance to the moves that we teach. We meet once a week, we have three short take home assignments per semester, and no partner is required! At SwingCal we focus on making dancing a stress free experience since swing is all about being comfortable in your personality and showing it through your dancing. We'd love to have you join our family!
 
-This is a 1 unit Pass/No Pass class.
-
-# The Basics
-
-- Classes will be held every Thursday from 7 to 9:30pm in room 242 of Hearst Gym.
-- This is a 1 unit Pass/No Pass class.
-- You are allowed 2 unexcused absences.
+This is a 1 unit Pass/No Pass class. You are allowed 2 unexcused absences.
 
 
-# Class syllabus
+## Class syllabus
 
 1. How to swing dance
 2. History and culture of swing dancing
@@ -32,7 +28,7 @@ This is a 1 unit Pass/No Pass class.
 6. Swing and its relatives
 
 
-# Assignments
+## Assignments
 
 SwingCal is a 1 Unit Decal for UC Berkeley students.  Taken Pass/No Pass, you will learn the fundamentals of swing
 
