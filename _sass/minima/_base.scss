@@ -98,6 +98,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
+  font-family: "Rousseau";
 }
 
 
@@ -220,7 +221,7 @@ pre {
 .parallax {
   perspective: 1px;
   z-index: 0;
-  height: 90vh;
+  height: 92vh;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-perspective-origin-x: 100%;
