@@ -5,13 +5,12 @@
   {%- include head.html -%}
 
   <body>
-    {%- include header.html -%}
     <div class='parallax'>
       <div class="parallax__layer parallax__layer--back">
         <img src="./assets/sample_background.jpg"></img>
       </div>
       <div class="parallax__layer parallax__layer--base">
-
+        {%- include header.html -%}
 
         <main class="page-content" aria-label="Content">
           <div class="wrapper">
@@ -21,6 +20,7 @@
       </div>
     </div>
     {%- include footer.html -%}
+
   </body>
 
 </html>

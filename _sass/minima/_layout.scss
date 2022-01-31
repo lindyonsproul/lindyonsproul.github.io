@@ -12,11 +12,12 @@
         }
         z-index: 5;
     }
+  position: absolute;
+  top: 0px;
   background: $saddle-brown-color;
   width: 100%;
   text-align: center;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
-  position: relative;
 }
 
 .site-title {
@@ -175,14 +176,17 @@
  * Site footer
  */
 .site-footer {
-  background-color: $slate-color-light;
-  border-top: 3px solid $saddle-brown-color;
-  padding: $spacing-unit 0;
-}
-
-.footer-heading {
-  @include relative-font-size(1.125);
-  margin-bottom: $spacing-unit / 2;
+  background-color: $slate-color-dark;
+  border-top: 3px solid $slate-color-dark;
+  position: fixed;
+  padding: 5px;
+  height: 8vh;
+  bottom: 0px;
+  width: 100%;
+  z-index: 5;
+  @include media-query($on-palm){
+      height: 16vh;
+  }
 }
 
 .contact-list,
@@ -200,7 +204,8 @@
 
 .footer-col {
   float: left;
-  margin-bottom: $spacing-unit / 2;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding-left: $spacing-unit / 2;
 }
 
@@ -214,21 +219,11 @@
   width:         calc(20% - (#{$spacing-unit} / 2));
 }
 
-.footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
 @include media-query($on-laptop) {
   .footer-col-1,
   .footer-col-2 {
     width: -webkit-calc(50% - (#{$spacing-unit} / 2));
     width:         calc(50% - (#{$spacing-unit} / 2));
-  }
-
-  .footer-col-3 {
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
   }
 }
 
@@ -246,7 +241,10 @@
  * Page content
  */
 .page-content {
-  margin-top: 0px;
+  margin-top: 75px;
+  @include media-query($on-palm){
+    margin-top: 40px;
+  }
   padding: $spacing-unit 0;
   flex: 1;
 }
