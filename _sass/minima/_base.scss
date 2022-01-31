@@ -197,12 +197,16 @@ pre {
 /**
  * Flex container: modern CSS method for doing multiple columns
  */
-.flex-container {
+.main-flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+}
+
+.landing-content-flex-container {
+
 }
 
 /**
@@ -212,8 +216,22 @@ pre {
   color: $gainsboro-color;
   min-width: 350px;
   background-color: $slate-color-light;
-  margin: 3px;
+  margin: 0px 10px;
   padding: 6px;
+}
+
+.text-box {
+  color: $gainsboro-color;
+  min-width: 350px;
+  background-color: $slate-color-light;
+  margin: 0px 3px 10px 3px;
+  padding: 6px;
+}
+
+#main-content {
+  background-color: $transparent-color;
+  padding: 0px;
+  margin: 0px;
 }
 
 /**
