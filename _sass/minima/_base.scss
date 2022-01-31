@@ -200,7 +200,7 @@ pre {
 .flex-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
 }
@@ -210,6 +210,7 @@ pre {
  */
 .landing-box {
   color: $gainsboro-color;
+  min-width: 350px;
   background-color: $slate-color-light;
   margin: 3px;
   padding: 6px;
