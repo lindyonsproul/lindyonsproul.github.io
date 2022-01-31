@@ -10,11 +10,8 @@ Absolutely not! We offer beginner lessons at every Lindy on Sproul event, and we
 
 # Do I need to pay to attend Lindy on Sproul classes?
 
-<<<<<<< HEAD
 Nope! Our classes are **free**. 
-=======
-Nope! Our classes are totally free.
->>>>>>> 79f6202760a942e9f52928a7ef97e94805fdf217
+
 
 # What are "roles" in swing dancing?
 
