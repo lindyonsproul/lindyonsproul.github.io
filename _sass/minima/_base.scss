@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 4;
 }
 
 
@@ -240,6 +240,7 @@ pre {
 .text-box {
   color: $gainsboro-color;
   min-width: 350px;
+  max-width: 800px;
   background-color: $slate-color-light;
   margin: 0px 5px 10px 5px;
   padding: 7px;
@@ -254,6 +255,12 @@ pre {
  * https://keithclark.co.uk/articles/pure-css-parallax-websites/
  */
 
+.map{
+    position: relative;
+    margin: 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+}
 .sep-block{
     display: block;
     border: 0px;

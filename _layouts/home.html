@@ -12,18 +12,22 @@ title: Lindy on Sproul
           <div class="text-box" style="flex: 0 0 100%">
             <h1>Who we are</h1>
             <p>We're a group of UC Berkeley students and
-               community-members who enjoy swing dancing!</p>
+               community-members who love swing dancing! Join us for FREE weekly
+               beginner and intermediate swing dance lessons.
+               All you need is to bring yourself and a pair of comfy shoes
+               to dance in.  No partner or dance experience is required. </p>
           </div>
           <div class="text-box" style="flex: 0 0 100%">
             <h1>When we meet</h1>
-            <p>11:45 AM to 2:30 PM every Saturday!</p>
+            <p> 11:45 AM to 2:30 PM every Saturday, rain, shine, or midterms!  We
+                generally continue meeting over campus breaks in the winter and
+                and summer as well.
+            </p>
           </div>
           <div class="text-box" style="flex: 0 0 100%">
             <h1>Where we meet</h1>
             <p>Upper Sproul Plaza on the Campus of UC Berkeley, right in front of Golden Bear Cafe. </p>
-            <p>Join us for FREE weekly beginner and intermediate swing dance lessons.
-               All you need is to bring yourself and a pair of comfy shoes to dance in.
-               No partner or dance experience is required. </p>
+
           </div>
         </div>
         <div class="landing-box" style="flex: 1 1" id="announcements">
@@ -48,11 +52,15 @@ title: Lindy on Sproul
         </div>
         <div class="landing-box" style="flex: 1 1" id="gcalendar-box">
             <div class="text-box" id="gcalendar-textbox">
+                <h1> Swing Events Calendar </h1>
                 <iframe id="gcalendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&showTitle=0&showNav=0&showTabs=0&showPrint=0&showTz=0&showCalendars=0&showDate=0&src=c3dpbmdjYWxAZ21haWwuY29t&src=ZHJuamc1NThsbm5ia3JtZHUzajNzbmVtajBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23E67C73&color=%23E67C73&color=%230B8043" style="border-width:0" width="800" height="300" frameborder="0" scrolling="no"></iframe>
             </div>
             <script>
                 $( document ).ready(function() {
                     $("#gcalendar").css("width", $("#gcalendar-textbox").width())
+                });
+                $( document ).ready(function() {
+                    $("#gcalendar").css("height", $("#gcalendar-textbox").width()*4/5)
                 });
                 $( window ).resize(function(){
                     $("#gcalendar").css("width", $("#gcalendar-textbox").width())
@@ -61,6 +69,18 @@ title: Lindy on Sproul
                     $("#gcalendar").css("height", $("#gcalendar-textbox").width()*4/5)
                 });
             </script>
+        </div>
+        <div class="landing-box" style="flex: 1 1" id="mapbox">
+            <div class="text-box">
+                <h1> Where is Lindy on Sproul Happening? </h1>
+                <p> So it's Saturday and you don't see Lindy on Sproul in the
+                    usual location in front of GBC...fear not, we're probably not far away! The
+                    map below shows some places we might be dancing.  Cesar Chavez tunnel
+                    is the most likely spot, but sometimes we opt for others if
+                    the tunnel is occupied or there is too much ambient noise.
+                </p>
+                <img class="map" src="./assets/ann-map.jpg"></img>
+
         </div>
     </div>
 </div>
