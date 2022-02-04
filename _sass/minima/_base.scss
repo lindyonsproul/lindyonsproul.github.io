@@ -128,11 +128,11 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: darken($brand-color, 20%);
   }
 
   &:hover {
-    color: $text-color;
+    color: $gainsboro-color;
     text-decoration: underline;
   }
 
@@ -232,8 +232,9 @@ pre {
   color: $gainsboro-color;
   min-width: 380px;
   background-color: $slate-color-light;
-  margin: 0px 10px;
-  padding: 6px;
+  background-color: $transparent-color;
+  padding: 0px;
+  margin: 0px;
 }
 
 .text-box {
@@ -244,22 +245,24 @@ pre {
   padding: 7px;
 }
 
-#main-content {
-  background-color: $transparent-color;
-  padding: 0px;
-  margin: 0px;
-}
 
-#announcements {
-    background-color: $transparent-color;
-    padding: 0px;
-    margin: 0px;
-}
+
+
 
 /**
  * Classes to handle parallax
  * https://keithclark.co.uk/articles/pure-css-parallax-websites/
  */
+
+.sep-block{
+    display: block;
+    border: 0px;
+    position: relative;
+    height: 5px;
+    margin: 0px;
+    background: $slate-color-dark;
+    z-index: 1;
+}
 
 .parallax {
   perspective: 1px;
@@ -306,7 +309,7 @@ pre {
     width: 16px;
     height: 16px;
     display: inline-block;
-    fill: #{$grey-color};
+    fill: #{$gainsboro-color};
     padding-right: 5px;
     vertical-align: text-top;
 }
