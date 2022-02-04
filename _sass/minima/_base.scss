@@ -8,10 +8,6 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-html {
-    min-width: 400px;
-}
-
 /**
  * Basic styling
  */
@@ -30,10 +26,6 @@ body {
   flex-direction: column;
 }
 
-.body-wrapper {
-    overflow-x: hidden !important;
-    min-width: 400px;
-}
 
 @font-face {
   font-family: "Rousseau";
@@ -274,8 +266,6 @@ pre {
 .parallax{
     z-index: 0;
     height: 92vh;
-    min-width: 400px;
-    overflow-x: hidden;
     overflow-y: auto;
 }
 
@@ -286,7 +276,6 @@ pre {
   bottom: 0;
   left: 0;
 }
-
 
 @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
     .parallax {
