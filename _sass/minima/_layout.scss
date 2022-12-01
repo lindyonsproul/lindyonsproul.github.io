@@ -181,12 +181,8 @@
   background-color: $slate-color-dark;
   border-top: 3px solid $slate-color-dark;
   color: $gainsboro-color;
-  position: fixed;
-  padding: 5px;
   height: 8vh;
-  bottom: 0px;
   width: 100%;
-  z-index: 5;
   @include media-query($on-palm){
       height: 16vh;
   }
@@ -283,6 +279,66 @@
 }
 
 
+// Homepage
+
+.top-card {
+    position: relative;
+}
+
+.top-card-background {
+    z-index: 0;
+}
+
+.homepage-nav-box {
+    font-size: 2vw;
+    position: absolute;
+    margin: 0px 5vw;
+    width: 90vw;
+    top: clamp(30px,12%, 12%);
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.link-wrapper{
+    padding: 4px 10px;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.link-wrapper:hover{
+    a {
+        color: black;
+    }
+    background-color: white;
+}
+
+#homepage-title {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 8vw;
+    font-family: "Rousseau";
+    color: white;
+}
+
+#homepage-subtitle {
+    font-family: system;
+    font-size: 3vw;
+}
+
+.info-card {
+    margin: 0px 5vw;
+    width: 90vw;
+    position: absolute;
+    background-color: white;
+    z-index: 3;
+}
 
 /**
  * Posts
