@@ -5,61 +5,56 @@
   {%- include head.html -%}
 
   <body>
-    <div class='body-wrapper'>
-        <div class="top-card">
-            <div class="top-card-background">
-                <img class="top-card-background-image" src="./dennis-eli.jpg">
-                <img class="top-card-background-image" src="./placeholder1.jpg">
-                <img class="top-card-background-image" src="./placeholder2.jpg">
-                <script>
-                let slideIndex = 0;
-                carousel();
-                function carousel() {
-                    let i;
-                    let x = document.getElementsByClassName("top-card-background-image");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    slideIndex++;
-                    if (slideIndex > x.length) {
-                        slideIndex = 1
-                    }
-                    x[slideIndex-1].style.display = "block";
-                    x[slideIndex-1].style.transitionProperty = "translate";
-                    x[slideIndex-1].style.transitionDuration = "4s";
-                    x[slideIndex-1].style.transform = "-50%";
-                    setTimeout(carousel, 4000); // Change image every 2 seconds
+    <div class="top-card">
+        <div class="top-card-background">
+            <img class="top-card-background-image" src="./dennis-eli.jpg">
+            <img class="top-card-background-image" src="./placeholder1.jpg">
+            <img class="top-card-background-image" src="./placeholder2.jpg">
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                let count = 0;
+                const targets = document.querySelectorAll(".top-card-background-image");
+                gsap.set(targets, { xPercent: 100 });
+                gsap.set(targets[0], { xPercent: 0 });
+
+                function slideIt() {
+                  gsap.to(targets[count], { xPercent: -100 });
+                  count = count < targets.length - 1 ? ++count : 0;
+                  gsap.fromTo(targets[count], { xPercent: 100 }, { xPercent: 0 });
+                  gsap.to({}, { duration: 5, onComplete: slideIt });
                 }
-                </script>
+                gsap.delayedCall(5, () => slideIt());
+            }, false);
+            </script>
+        </div>
+        <div class="homepage-nav-box">
+            <div class="link-wrapper" id="home"><a href="/"> Home </a></div>
+            <div class="link-wrapper" id="about"><a href="/about/"> About </a></div>
+            <div class="link-wrapper" id="classes"><a href="/swingcal/"> Classes </a></div>
+            <div class="link-wrapper" id="get-involved"><a href="/getinvolved/"> Get Involved </a></div>
+            <div class="link-wrapper"><a> Events </a></div>
+            <script>
+                // Highlights the current page link in the nav bar
+                let currentPagePath = window.location.pathname.substring(1)
+                if (currentPagePath.length === 0) {
+                    currentPagePath = "home";
+                }
+                let linkBox = document.querySelector("#" + currentPagePath)
+                linkBox.style.backgroundColor = "white";
+                linkBox.firstChild.style.color = "black";
+            </script>
+        </div>
+        <div id="homepage-title">
+            <p> Lindy on Sproul</p>
+            <p id="homepage-subtitle"> UC Berkeley's Swing Dancing Community </p>
+        </div>
+        <div class="info-card">
+            {{ content }}
+            <div class="info-block"> some infor here
             </div>
-            <div class="homepage-nav-box">
-                <div class="link-wrapper" id="home"><a href="/"> Home </a></div>
-                <div class="link-wrapper" id="about"><a href="/about/"> About </a></div>
-                <div class="link-wrapper" id="classes"><a href="/swingcal/"> Classes </a></div>
-                <div class="link-wrapper" id="get-involved"><a href="/getinvolved/"> Get Involved </a></div>
-                <div class="link-wrapper"><a> Events </a></div>
-                <script>
-                    // Highlights the current page link in the nav bar
-                    let currentPagePath = window.location.pathname.substring(1)
-                    if (currentPagePath.length === 0) {
-                        currentPagePath = "home";
-                    }
-                    let linkBox = document.querySelector("#" + currentPagePath)
-                    linkBox.style.backgroundColor = "white";
-                    linkBox.firstChild.style.color = "black";
-                </script>
+            <div class="info-block"> some more inor
             </div>
-            <div id="homepage-title">
-                <p> Lindy on Sproul</p>
-                <p id="homepage-subtitle"> UC Berkeley's Swing Dancing Community </p>
-            </div>
-            <div class="info-card">
-                <div class="info-block"> some infor here
-                </div>
-                <div class="info-block"> some more inor
-                </div>
-                <div class="info-block"> even more stuffs
-                </div>
+            <div class="info-block"> even more stuffs
             </div>
         </div>
     </div>
