@@ -8,7 +8,29 @@
     <div class='body-wrapper'>
         <div class="top-card">
             <div class="top-card-background">
-                <img src="./dennis-eli.jpg">
+                <img class="top-card-background-image" src="./dennis-eli.jpg">
+                <img class="top-card-background-image" src="./placeholder1.jpg">
+                <img class="top-card-background-image" src="./placeholder2.jpg">
+                <script>
+                let slideIndex = 0;
+                carousel();
+                function carousel() {
+                    let i;
+                    let x = document.getElementsByClassName("top-card-background-image");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) {
+                        slideIndex = 1
+                    }
+                    x[slideIndex-1].style.display = "block";
+                    x[slideIndex-1].style.transitionProperty = "translate";
+                    x[slideIndex-1].style.transitionDuration = "4s";
+                    x[slideIndex-1].style.transform = "-50%";
+                    setTimeout(carousel, 4000); // Change image every 2 seconds
+                }
+                </script>
             </div>
             <div class="homepage-nav-box">
                 <div class="link-wrapper" id="home"><a href="/"> Home </a></div>
@@ -33,14 +55,13 @@
             </div>
             <div class="info-card">
                 <div class="info-block"> some infor here
-                <div>
+                </div>
                 <div class="info-block"> some more inor
-                <div>
+                </div>
                 <div class="info-block"> even more stuffs
-                <div>
+                </div>
             </div>
         </div>
-
     </div>
     {%- include footer.html -%}
 
