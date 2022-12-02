@@ -7,9 +7,9 @@
   <body>
     <div class="top-card">
         <div class="top-card-background">
-            <img class="top-card-background-image" src="./dennis-eli.jpg">
-            <img class="top-card-background-image" src="./placeholder1.jpg">
-            <img class="top-card-background-image" src="./placeholder2.jpg">
+            <img class="top-card-background-image" src="{{ '/dennis-eli.jpg' | relative_url }}">
+            <img class="top-card-background-image" src="{{ '/placeholder1.jpg' | relative_url }}">
+            <img class="top-card-background-image" src="{{ '/placeholder2.jpg' | relative_url }}">
             <script>
             document.addEventListener('DOMContentLoaded', function() {
                 let count = 0;
@@ -30,16 +30,16 @@
         <div class="homepage-nav-box">
             <div class="link-wrapper" id="home"><a href="/"> Home </a></div>
             <div class="link-wrapper" id="about"><a href="/about/"> About </a></div>
-            <div class="link-wrapper" id="classes"><a href="/swingcal/"> Classes </a></div>
-            <div class="link-wrapper" id="get-involved"><a href="/getinvolved/"> Get Involved </a></div>
-            <div class="link-wrapper"><a> Events </a></div>
+            <div class="link-wrapper" id="swingcal"><a href="/swingcal/"> SwingCal </a></div>
+            <div class="link-wrapper" id="getinvolved"><a href="/getinvolved/"> Get Involved </a></div>
+            <div class="link-wrapper" id="lindyatnight"><a href="/lindyatnight/"> Events </a></div>
             <script>
                 // Highlights the current page link in the nav bar
                 let currentPagePath = window.location.pathname.substring(1)
                 if (currentPagePath.length === 0) {
-                    currentPagePath = "home";
+                    currentPagePath = "home/";
                 }
-                let linkBox = document.querySelector("#" + currentPagePath)
+                let linkBox = document.querySelector("#" + currentPagePath.slice(0,-1))
                 linkBox.style.backgroundColor = "white";
                 linkBox.firstChild.style.color = "black";
             </script>
@@ -49,12 +49,7 @@
             <p id="homepage-subtitle"> UC Berkeley's Swing Dancing Community </p>
         </div>
         <div class="info-card">
-            {{ content }}
-            <div class="info-block"> some infor here
-            </div>
-            <div class="info-block"> some more inor
-            </div>
-            <div class="info-block"> even more stuffs
+            <div class="info-block">
             </div>
         </div>
     </div>
