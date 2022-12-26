@@ -377,12 +377,40 @@
 }
 
 .saturday-social-grid {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas: 
+  "header header"
+  "subheader body"
+  "subheader body"
 }
 
+.grid-header {
+  background-color: pink;
+  grid-area: header;
+  text-align: center;
+}
 
+.where-subheader {
+  background-color:yellow;
+  grid-area:subheader;
+}
 
+.where-subheader{
+  background-color: orange;
+  grid-area: body;
+}
 
+.when-subheader {
+  background-color:yellow;
+  grid-area:subheader;
+}
+
+.when-body {
+  background-color: orange;
+  grid-area: body;
+}
 
 /**
  * Posts
