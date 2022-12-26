@@ -25,9 +25,6 @@
                         slideIndex = 1
                     }
                     x[slideIndex-1].style.display = "block";
-                    x[slideIndex-1].style.transitionProperty = "translate";
-                    x[slideIndex-1].style.transitionDuration = "4s";
-                    x[slideIndex-1].style.transform = "-50%";
                     setTimeout(carousel, 4000); // Change image every 2 seconds
                 }
                 </script>
@@ -53,15 +50,35 @@
                 <p> Lindy on Sproul</p>
                 <p id="homepage-subtitle"> UC Berkeley's Swing Dancing Community </p>
             </div>
+
             <div class="info-card">
-                <div class="info-block"> some infor here
+                <div class="about-header1"> ABOUT US
                 </div>
-                <div class="info-block"> some more inor
+                <div class="about-body"> We're a group of UC Berkeley students and community-members who love swing dancing! We hold FREE weekly beginner and intermediate swing dance lessons on Saturdays and teach SwingCal, a semester long Swing Dancing course, on Thursday evenings.
                 </div>
-                <div class="info-block"> even more stuffs
+
+                <div class="about-body"> You do not need to be a UC Berkeley student to come dance with us. All you need is to bring yourself and a pair of comfy shoes to dance in. No partner or dance experience is required!
                 </div>
+
+                <div class=saturday-social-grid>
+                    <div class="grid-header"> SATURDAY SOCIAL DANCE</div>
+                    <div class="grid-subheader"> WHEN WE MEET</div>
+                    <div class="grid-body"></div>
+                    <div class="grid-subheader"> WHERE WE MEET</div>
+                    <div class="grid-body"></div>
+                    <img class="saturday-social-photo">
+
+                </div>
+
+
+
             </div>
-        </div>
+
+        
+
+
+
+
     </div>
     {%- include footer.html -%}
 
