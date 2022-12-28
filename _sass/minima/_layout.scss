@@ -358,7 +358,7 @@
 
 .about-header1 {
   text-align: center;
-  font-size: clamp(1vw, 3vw, 4vw);
+  font-size: clamp(20px, 3vw, 4vw);
   font-weight: bold;
   margin-top: 10%;
   margin-bottom: 2vh;
@@ -366,7 +366,7 @@
 
 .about-body {
   flex-shrink: 0;
-  font-size: clamp(1vw, 2vw, 25px);
+  font-size: clamp(15px, 2vw, 25px);
   text-align: center;
   line-height: 1.5;
   margin: 2% auto;
@@ -376,40 +376,58 @@
 
 }
 
+.saturday-social-info {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10%;
+}
+
+
 .saturday-social-grid {
+  flex-grow: 2;
+  text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-rows: auto;
+  grid-column-gap: 2vw;
+  grid-row-gap: 1.5vh;
   grid-template-areas: 
-  "header header"
-  "subheader body"
-  "subheader body"
+  "header header photo"
+  "subheader1 subheader2 photo"
+  "body1 body2 photo"
 }
 
 .grid-header {
-  background-color: pink;
   grid-area: header;
-  text-align: center;
+  font-size: clamp(18px, 3vw, 3vw);
 }
 
 .where-subheader {
-  background-color:yellow;
-  grid-area:subheader;
-}
-
-.where-subheader{
-  background-color: orange;
-  grid-area: body;
+  grid-area:subheader1;
+  font-size: clamp(16px, 2vw, 2.5vw);
 }
 
 .when-subheader {
-  background-color:yellow;
-  grid-area:subheader;
+  grid-area:subheader2;
+  font-size: clamp(16px, 2vw, 2.5vw);
 }
 
+.where-body{
+  grid-area: body1;
+  font-size: clamp(14px, 1.5vw, 23px);
+  line-height: 1.5;
+}
+
+
 .when-body {
-  background-color: orange;
-  grid-area: body;
+  grid-area: body2;
+  font-size: clamp(14px, 1.5vw, 23px);
+  line-height: 1.5;
+}
+
+.social-photo {
+  grid-area: photo;
+  width: 40%;
 }
 
 /**
