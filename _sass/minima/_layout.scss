@@ -387,7 +387,7 @@
   flex-grow: 2;
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr;
   grid-template-rows: auto;
   grid-column-gap: 2vw;
   grid-row-gap: 1.5vh;
@@ -427,7 +427,39 @@
 
 .social-photo {
   grid-area: photo;
-  width: 40%;
+  width: 80%;
+}
+
+.swingcal-info {
+  padding-top: 10%;
+}
+
+.swingcal-grid {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 2vw;
+  grid-row-gap: 1.5vh;
+  grid-template-areas: 
+  "photo header"
+  "photo body"
+}
+
+.swingcal-photo {
+  grid-area: photo;
+  width: 80%;
+}
+
+.swingcal-header {
+  grid-area: header;
+  font-size: clamp(18px, 3vw, 3vw);
+}
+
+.swingcal-body {
+  grid-area: body;
+  font-size: clamp(14px, 1.5vw, 23px);
+  line-height: 1.5;
 }
 
 /**
