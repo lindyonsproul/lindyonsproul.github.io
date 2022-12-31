@@ -383,84 +383,155 @@
 }
 
 
+
 .saturday-social-grid {
   flex-grow: 2;
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
   grid-template-rows: auto;
   grid-column-gap: 2vw;
   grid-row-gap: 1.5vh;
-  grid-template-areas: 
-  "header header photo"
-  "subheader1 subheader2 photo"
-  "body1 body2 photo"
 }
 
 .grid-header {
   grid-area: header;
-  font-size: clamp(18px, 3vw, 3vw);
+  font-size: clamp(18px, 3vw, 2.5vw);
 }
 
 .where-subheader {
   grid-area:subheader1;
-  font-size: clamp(16px, 2vw, 2.5vw);
+  font-size: clamp(16px, 2vw, 2vw);
 }
 
 .when-subheader {
   grid-area:subheader2;
-  font-size: clamp(16px, 2vw, 2.5vw);
+  font-size: clamp(16px, 2vw, 2vw);
 }
 
 .where-body{
   grid-area: body1;
-  font-size: clamp(14px, 1.5vw, 23px);
+  font-size: clamp(14px, 1.5vw, 20px);
   line-height: 1.5;
 }
 
 
 .when-body {
   grid-area: body2;
-  font-size: clamp(14px, 1.5vw, 23px);
+  font-size: clamp(14px, 1.5vw, 20px);
   line-height: 1.5;
 }
 
-.social-photo {
+.social-pic {
   grid-area: photo;
   width: 80%;
 }
 
-.swingcal-info {
-  padding-top: 10%;
+
+@media (min-width: 250px) {
+  .saturday-social-grid {
+    grid-template-areas: 
+    "header"
+    "subheader1"
+    "body1"
+    "subheader2"
+    "body2"
+    "photo"
+  }
+  .social-pic {
+    width: 70%;
+  }
 }
+
+
+@media (min-width: 500px) {
+  .saturday-social-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "subheader1 subheader2"
+    "body1 body2"
+    "photo photo"
+  }
+  .social-pic {
+    width: 60%;
+  }
+}
+
+@media (min-width: 850px) {
+  .saturday-social-grid {
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: 
+    "header header photo"
+    "subheader1 subheader2 photo"
+    "body1 body2 photo"
+  }
+  .social-pic {
+    width: 80%;
+  }
+}
+
+
+.swingcal-info {
+  padding: 10% 10% 10% 10%;
+}
+
 
 .swingcal-grid {
   display: grid;
   text-align: center;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-column-gap: 2vw;
+  grid-column-gap: 6vw;
   grid-row-gap: 1.5vh;
-  grid-template-areas: 
-  "photo header"
-  "photo body"
 }
 
-.swingcal-photo {
+.swingcal-pic {
   grid-area: photo;
-  width: 80%;
 }
 
 .swingcal-header {
   grid-area: header;
-  font-size: clamp(18px, 3vw, 3vw);
+  font-size: clamp(18px, 2.5vw, 2.5vw);
 }
 
 .swingcal-body {
   grid-area: body;
-  font-size: clamp(14px, 1.5vw, 23px);
+  font-size: clamp(14px, 1.5vw, 20px);
   line-height: 1.5;
+  padding-bottom: 3vh;
 }
+
+
+@media (min-width: 550px) {
+  .swingcal-grid {
+    grid-template-areas: 
+    "header"
+    "body"
+    "photo"
+  }
+  .swingcal-pic {
+      width: 70%;
+  }
+}
+
+@media (min-width: 750px) {
+  .swingcal-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "photo header"
+    "photo body"
+  }
+  .swingcal-pic {
+      width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
 
 /**
  * Posts
